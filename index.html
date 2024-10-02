@@ -48,9 +48,11 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            gap: 20px;
         }
         .project-item {
-            width: 30%;
+            flex: 1 1 calc(30% - 20px);
+            box-sizing: border-box;
             margin-bottom: 30px;
             background-color: #ecf0f1;
             padding: 20px;
@@ -100,8 +102,6 @@
             <h3>GruInject</h3>
             <p>A dependency injection asset/tool for unity engine.<a href="#https://assetstore.unity.com/packages/slug/294076">Check on asset store.</a></p>
         </div>
-    </div>
-    <div class="projects">
         <div class="project-item">
             <img src="images/castlePack.png" alt="Project 2">
             <h3>Castle Pack by ProGru</h3>
